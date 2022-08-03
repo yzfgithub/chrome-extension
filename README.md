@@ -5,11 +5,11 @@ manifest.json:
 
 	"content_scripts": [
 		{
-			"matches": ["https://blog.csdn.net/*"],
+			"matches": ["https://blog.csdn.net/*","https://www.zhihu.com/*"],
 			"js": ["content_script.js"],
-			"run_at": "document_start"
+			"run_at": "document_idle"
 		}
-	],
+	]
 	"browser_action": {
 		"default_icon": "su.png",
 		"default_title": "csdn复制加载",
