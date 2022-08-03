@@ -1,0 +1,22 @@
+{
+	"name": "csdn复制加载+取消知乎登录弹框插件",
+	"version": "1.0.10",
+	"description": "y-chrome-extension",
+	"manifest_version": 2,
+	"icons": {
+		"16": "monkey.jpeg",
+		"48": "monkey.jpeg",
+		"128": "monkey.jpeg"
+	},
+	"permissions": [
+		"tabs",
+		"background"
+	],
+	"content_scripts": [
+		{
+			"matches": ["https://blog.csdn.net/*","https://www.zhihu.com/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_idle"
+		}
+	]
+}
